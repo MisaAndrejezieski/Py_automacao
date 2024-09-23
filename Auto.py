@@ -11,17 +11,17 @@ pyautogui.press('enter')
 pyautogui.write('anime one peace')
 pyautogui.press('enter')
 time.sleep(1)
-pyautogui.hotkey('ctrl','w')
+pyautogui.hotkey('ctrl','t')
+
 
 # Abrindo o edge e realizando 2° pesquisa e atualizando a aba do navegador
-pyautogui.press('win')
-pyautogui.write('edge')
-pyautogui.press('enter')
 pyautogui.write('anime Dragonball')
 pyautogui.press('enter')
 time.sleep(1)
 pyautogui.hotkey('ctrl','w')
+pyautogui.hotkey('ctrl','t')
 
+'''
 # Abrindo o edge e realizando 3° pesquisa e atualizando a aba do navegador
 pyautogui.press('win')
 pyautogui.write('edge')
@@ -270,5 +270,5 @@ pyautogui.press('win')
 pyautogui.write('edge')
 pyautogui.press('enter')
 pyautogui.write('anime The Girl Who Leapt Through Time')
-pyautogui.press('enter')
-
+pyautogui.press('enter')-->
+'''
