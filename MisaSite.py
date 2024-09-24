@@ -25,7 +25,7 @@ pyautogui.hotkey('ctrl', 't')
 for url in urls:
     pyautogui.write(url)
     pyautogui.press('enter')
-    time.sleep(2)  # Espera 5 segundos para carregar a página
+    time.sleep(10)  # Espera 5 segundos para carregar a página
     pyautogui.hotkey('ctrl', 'w')
     pyautogui.hotkey('ctrl', 't')
 
