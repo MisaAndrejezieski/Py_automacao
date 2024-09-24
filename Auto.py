@@ -33,7 +33,7 @@ pyautogui.press('enter')
 time.sleep(0.5)
 
 # Iniciando o laço de repetição para 7 temas diferentes
-for _ in range(7):
+for _ in range(2):
     tema = random.choice(temas)
     pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
     
