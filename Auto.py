@@ -23,14 +23,22 @@ def gerar_pesquisas_sobre_tema(tema, n):
     ]
     return perguntas[:n]
 
+# Função para abrir o Edge e realizar uma pesquisa
+def abrir_edge_e_pesquisar(pesquisa):
+    pyautogui.press('win')
+    pyautogui.write('edge')
+    pyautogui.press('enter')
+    time.sleep(1)  # Aumentar o tempo para garantir que o navegador abra
+    pyautogui.write(pesquisa)
+    pyautogui.press('enter')
+    time.sleep(1)  # Tempo para carregar a página
+
+# Alerta inicial
 pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
 pyautogui.PAUSE = 0.5
 
-# Abrindo o Edge
-pyautogui.press('win')
-pyautogui.write('edge')
-pyautogui.press('enter')
-time.sleep(0.5)
+# Abrindo o Edge uma vez
+abrir_edge_e_pesquisar('')
 
 # Iniciando o laço de repetição para 7 temas diferentes
 for _ in range(2):
@@ -38,15 +46,17 @@ for _ in range(2):
     pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
     
     for pesquisa in pesquisas:
-        # Abrindo o Edge
-        pyautogui.press('win')
-        pyautogui.write('edge')
-        pyautogui.press('enter')
-        time.sleep(0.5)
+        pyautogui.hotkey('ctrl', 't')  # Abrir uma nova aba
         pyautogui.write(pesquisa)
         pyautogui.press('enter')
-        time.sleep(0.5)
-        pyautogui.hotkey('ctrl', 't')
-        
-        pyautogui.hotkey('alt', 'f4')
+        time.sleep(1)  # Tempo para carregar a página
+        pyautogui.hotkey('ctrl', 'w')  # Fechar a aba após a pesquisa
+
+# Limpar dados de navegação e cookies
+pyautogui.hotkey('ctrl', 'shift', 'delete')
+time.sleep(1)  # Tempo para abrir a janela de limpeza de dados
+pyautogui.press('enter')  # Confirmar a limpeza dos dados
+
+# Fechar o navegador
+pyautogui.hotkey('alt', 'f4')
 
