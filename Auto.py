@@ -4,7 +4,7 @@ import random
 
 # Lista de possíveis temas para as pesquisas
 temas = [
-    "tecnologia", "Rock", "Anime", "James Jayden"
+    "tecnologia", "Rock", "Anime", "Ficção cientifica", "Programação"
 ]
 
 # Função para gerar uma lista de pesquisas aleatórias sobre um tema
