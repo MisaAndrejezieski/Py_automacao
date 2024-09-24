@@ -12,37 +12,41 @@ temas = [
     "design", "moda", "gastronomia"
 ]
 
-# Função para gerar uma lista de pesquisas aleatórias
-def gerar_pesquisas_aleatorias(n):
-    pesquisas = []
-    for _ in range(n):
-        tema = random.choice(temas)
-        pesquisas.append(f"O que é {tema}")
-    return pesquisas
-
-# Gerar 31 pesquisas aleatórias
-pesquisas = gerar_pesquisas_aleatorias(31)
+# Função para gerar uma lista de pesquisas aleatórias sobre um tema
+def gerar_pesquisas_sobre_tema(tema, n):
+    perguntas = [
+        f"O que é {tema}?",
+        f"Quais são as últimas novidades em {tema}?",
+        f"Como {tema} impacta a sociedade?",
+        f"Quais são os principais desafios em {tema}?",
+        f"Quem são os principais especialistas em {tema}?"
+    ]
+    return perguntas[:n]
 
 pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
 pyautogui.PAUSE = 0.5
 
-# Abrindo o Edge e realizando a 1ª pesquisa
+# Abrindo o Edge
 pyautogui.press('win')
 pyautogui.write('edge')
 pyautogui.press('enter')
-pyautogui.write(pesquisas[0])
-pyautogui.press('enter')
-time.sleep(5)
-pyautogui.hotkey('ctrl', 't')
+time.sleep(2)
 
-# Iniciando o laço de repetição para as pesquisas restantes
-for pesquisa in pesquisas[1:]:
-    pyautogui.write(pesquisa)
-    pyautogui.press('enter')
-    time.sleep(15)
+# Iniciando o laço de repetição para 7 temas diferentes
+for _ in range(7):
+    tema = random.choice(temas)
+    pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
+    
+    for pesquisa in pesquisas:
+        pyautogui.write(pesquisa)
+        pyautogui.press('enter')
+        time.sleep(30)
+        pyautogui.hotkey('ctrl', 't')
+    
+    # Fechar a aba atual
     pyautogui.hotkey('ctrl', 'w')
-    pyautogui.hotkey('ctrl', 't')
 
-# Fechar a janela atual com Alt + F4
+
+# Fechar o navegador com Alt + F4
 pyautogui.hotkey('alt', 'f4')
 
