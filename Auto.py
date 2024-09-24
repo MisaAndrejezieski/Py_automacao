@@ -62,7 +62,7 @@ def limpar_dados_navegacao():
         time.sleep(2)  # Tempo para abrir a janela de limpeza de dados
         pyautogui.press('enter')  # Confirmar a limpeza dos dados
         time.sleep(2)  # Tempo para concluir a limpeza
-        logging.info("Dados de navegação e cookies limpos com sucesso.")
+        pyautogui.alert("Dados de navegação e cookies limpos com sucesso.")
     except Exception as e:
         logging.error(f"Erro ao limpar os dados de navegação: {e}")
         pyautogui.alert(f"Erro ao limpar os dados de navegação: {e}")
