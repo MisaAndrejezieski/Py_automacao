@@ -1,6 +1,10 @@
 import time
 import pyautogui
 import random
+import logging
+
+# Configuração de logging
+logging.basicConfig(filename='automacao_pesquisa.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Lista de possíveis temas para as pesquisas
 temas = [
@@ -30,8 +34,10 @@ def abrir_edge():
         pyautogui.write('edge')
         pyautogui.press('enter')
         time.sleep(2)  # Aumentar o tempo para garantir que o navegador abra
+        logging.info("Navegador Edge aberto com sucesso.")
         return True
     except Exception as e:
+        logging.error(f"Erro ao abrir o Edge: {e}")
         pyautogui.alert(f"Erro ao abrir o Edge: {e}")
         return False
 
@@ -43,7 +49,9 @@ def realizar_pesquisa(pesquisa):
         pyautogui.press('enter')
         time.sleep(2)  # Tempo para carregar a página
         pyautogui.hotkey('ctrl', 'w')  # Fechar a aba após a pesquisa
+        logging.info(f"Pesquisa realizada: {pesquisa}")
     except Exception as e:
+        logging.error(f"Erro ao realizar a pesquisa: {e}")
         pyautogui.alert(f"Erro ao realizar a pesquisa: {e}")
 
 # Função para limpar dados de navegação e cookies
@@ -53,34 +61,60 @@ def limpar_dados_navegacao():
         time.sleep(2)  # Tempo para abrir a janela de limpeza de dados
         pyautogui.press('enter')  # Confirmar a limpeza dos dados
         time.sleep(2)  # Tempo para concluir a limpeza
+        pyautogui.alert("Dados de navegação e cookies limpos com sucesso.")
     except Exception as e:
+        logging.error(f"Erro ao limpar os dados de navegação: {e}")
         pyautogui.alert(f"Erro ao limpar os dados de navegação: {e}")
 
 # Função para fechar o navegador
 def fechar_navegador():
     try:
         pyautogui.hotkey('alt', 'f4')
+        logging.info("Navegador fechado com sucesso.")
     except Exception as e:
+        logging.error(f"Erro ao fechar o navegador: {e}")
         pyautogui.alert(f"Erro ao fechar o navegador: {e}")
+
+# Função para verificar a conectividade com a internet
+def verificar_conectividade():
+    try:
+        pyautogui.press('win')
+        pyautogui.write('cmd')
+        pyautogui.press('enter')
+        time.sleep(1)
+        pyautogui.write('ping www.google.com')
+        pyautogui.press('enter')
+        time.sleep(5)
+        pyautogui.hotkey('alt', 'f4')
+        logging.info("Conectividade com a internet verificada.")
+        return True
+    except Exception as e:
+        logging.error(f"Erro ao verificar a conectividade com a internet: {e}")
+        pyautogui.alert(f"Erro ao verificar a conectividade com a internet: {e}")
+        return False
 
 # Alerta inicial
 pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
 pyautogui.PAUSE = 0.5
 
-# Abrindo o Edge uma vez
-if abrir_edge():
-    # Iniciando o laço de repetição para 7 temas diferentes
-    for _ in range(2):
-        tema = random.choice(temas)
-        pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
+# Verificar conectividade com a internet
+if verificar_conectividade():
+    # Abrindo o Edge uma vez
+    if abrir_edge():
+        # Iniciando o laço de repetição para 7 temas diferentes
+        for _ in range(2):
+            tema = random.choice(temas)
+            pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
+            
+            for pesquisa in pesquisas:
+                realizar_pesquisa(pesquisa)
         
-        for pesquisa in pesquisas:
-            realizar_pesquisa(pesquisa)
-    
-    # Limpar dados de navegação e cookies
-    limpar_dados_navegacao()
-    
-    # Fechar o navegador
-    fechar_navegador()
+        # Limpar dados de navegação e cookies
+        limpar_dados_navegacao()
+        
+        # Fechar o navegador
+        fechar_navegador()
+    else:
+        pyautogui.alert("Não foi possível abrir o navegador Edge.")
 else:
-    pyautogui.alert("Não foi possível abrir o navegador Edge.")
+    pyautogui.alert("Não foi possível verificar a conectividade com a internet.")
