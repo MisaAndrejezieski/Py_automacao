@@ -17,7 +17,7 @@ def gerar_pesquisas_aleatorias(n):
     pesquisas = []
     for _ in range(n):
         tema = random.choice(temas)
-        pesquisas.append(f"Pesquisa sobre {tema}")
+        pesquisas.append(f"O que é {tema}")
     return pesquisas
 
 # Gerar 31 pesquisas aleatórias
@@ -39,7 +39,7 @@ pyautogui.hotkey('ctrl', 't')
 for pesquisa in pesquisas[1:]:
     pyautogui.write(pesquisa)
     pyautogui.press('enter')
-    time.sleep(10)
+    time.sleep(15)
     pyautogui.hotkey('ctrl', 'w')
     pyautogui.hotkey('ctrl', 't')
 
