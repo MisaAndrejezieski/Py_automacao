@@ -30,7 +30,7 @@ pyautogui.PAUSE = 0.5
 pyautogui.press('win')
 pyautogui.write('edge')
 pyautogui.press('enter')
-time.sleep(2)
+time.sleep(0.5)
 
 # Iniciando o laço de repetição para 7 temas diferentes
 for _ in range(7):
@@ -38,15 +38,15 @@ for _ in range(7):
     pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
     
     for pesquisa in pesquisas:
+        # Abrindo o Edge
+        pyautogui.press('win')
+        pyautogui.write('edge')
+        pyautogui.press('enter')
+        time.sleep(0.5)
         pyautogui.write(pesquisa)
         pyautogui.press('enter')
-        time.sleep(30)
+        time.sleep(0.5)
         pyautogui.hotkey('ctrl', 't')
-    
-    # Fechar a aba atual
-    pyautogui.hotkey('ctrl', 'w')
-
-
-# Fechar o navegador com Alt + F4
-pyautogui.hotkey('alt', 'f4')
+        
+        pyautogui.hotkey('alt', 'f4')
 
