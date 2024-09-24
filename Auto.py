@@ -2,6 +2,7 @@ import time
 import pyautogui
 import random
 import logging
+import requests
 
 # Configuração de logging
 logging.basicConfig(filename='automacao_pesquisa.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -61,7 +62,7 @@ def limpar_dados_navegacao():
         time.sleep(2)  # Tempo para abrir a janela de limpeza de dados
         pyautogui.press('enter')  # Confirmar a limpeza dos dados
         time.sleep(2)  # Tempo para concluir a limpeza
-        pyautogui.alert("Dados de navegação e cookies limpos com sucesso.")
+        logging.info("Dados de navegação e cookies limpos com sucesso.")
     except Exception as e:
         logging.error(f"Erro ao limpar os dados de navegação: {e}")
         pyautogui.alert(f"Erro ao limpar os dados de navegação: {e}")
@@ -78,43 +79,45 @@ def fechar_navegador():
 # Função para verificar a conectividade com a internet
 def verificar_conectividade():
     try:
-        pyautogui.press('win')
-        pyautogui.write('cmd')
-        pyautogui.press('enter')
-        time.sleep(1)
-        pyautogui.write('ping www.google.com')
-        pyautogui.press('enter')
-        time.sleep(5)
-        pyautogui.hotkey('alt', 'f4')
-        logging.info("Conectividade com a internet verificada.")
-        return True
-    except Exception as e:
+        response = requests.get('https://www.google.com', timeout=5)
+        if response.status_code == 200:
+            logging.info("Conectividade com a internet verificada.")
+            return True
+        else:
+            logging.error("Falha na verificação de conectividade com a internet.")
+            return False
+    except requests.ConnectionError as e:
         logging.error(f"Erro ao verificar a conectividade com a internet: {e}")
         pyautogui.alert(f"Erro ao verificar a conectividade com a internet: {e}")
         return False
 
-# Alerta inicial
-pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
-pyautogui.PAUSE = 0.5
+# Função principal para executar a automação
+def executar_automacao(num_temas=2, num_pesquisas=5):
+    # Alerta inicial
+    pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
+    pyautogui.PAUSE = 0.5
 
-# Verificar conectividade com a internet
-if verificar_conectividade():
-    # Abrindo o Edge uma vez
-    if abrir_edge():
-        # Iniciando o laço de repetição para 7 temas diferentes
-        for _ in range(2):
-            tema = random.choice(temas)
-            pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
+    # Verificar conectividade com a internet
+    if verificar_conectividade():
+        # Abrindo o Edge uma vez
+        if abrir_edge():
+            # Iniciando o laço de repetição para os temas diferentes
+            for _ in range(num_temas):
+                tema = random.choice(temas)
+                pesquisas = gerar_pesquisas_sobre_tema(tema, num_pesquisas)
+                
+                for pesquisa in pesquisas:
+                    realizar_pesquisa(pesquisa)
             
-            for pesquisa in pesquisas:
-                realizar_pesquisa(pesquisa)
-        
-        # Limpar dados de navegação e cookies
-        limpar_dados_navegacao()
-        
-        # Fechar o navegador
-        fechar_navegador()
+            # Limpar dados de navegação e cookies
+            limpar_dados_navegacao()
+            
+            # Fechar o navegador
+            fechar_navegador()
+        else:
+            pyautogui.alert("Não foi possível abrir o navegador Edge.")
     else:
-        pyautogui.alert("Não foi possível abrir o navegador Edge.")
-else:
-    pyautogui.alert("Não foi possível verificar a conectividade com a internet.")
+        pyautogui.alert("Não foi possível verificar a conectividade com a internet.")
+
+# Executar a automação com parâmetros configuráveis
+executar_automacao(num_temas=2, num_pesquisas=5)
