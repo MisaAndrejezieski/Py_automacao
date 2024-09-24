@@ -41,7 +41,7 @@ pyautogui.PAUSE = 0.5
 abrir_edge_e_pesquisar('')
 
 # Iniciando o laço de repetição para 7 temas diferentes
-for _ in range(2):
+for _ in range(1):
     tema = random.choice(temas)
     pesquisas = gerar_pesquisas_sobre_tema(tema, 5)
     
@@ -51,6 +51,9 @@ for _ in range(2):
         pyautogui.press('enter')
         time.sleep(1)  # Tempo para carregar a página
         pyautogui.hotkey('ctrl', 'w')  # Fechar a aba após a pesquisa
+#Alerta o fim das pesquisas
+pyautogui.alert('O código de automação de pesquisa no Edge está terminando....')
+pyautogui.PAUSE = 0.5
 
 # Limpar dados de navegação e cookies
 pyautogui.hotkey('ctrl', 'shift', 'delete')
