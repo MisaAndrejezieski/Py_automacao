@@ -3,12 +3,7 @@ import pyautogui
 
 # Lista de URLs para acessar
 urls = [
-    'https://sites.google.com/view/misa-misa/home',
-    'https://sites.google.com/view/deusadoshi/nicole-doshi',
-    'https://sites.google.com/view/misa-misa/projetos',
-    'https://sites.google.com/view/misa-misa/filmes',
-    'https://sites.google.com/view/misa-misa/t-i',
-    'https://sites.google.com/view/misa-misa/windows'
+    'https://web.dio.me/topics/o-que-e-pyautogui?back=%2Ftrack%2Fcoding-the-future-claro-java-spring-boot&order=undefined&page=1&search=&tab=forum&track_id=2e52ad2d-0a3b-4ade-a4ae-17830f528834'
 ]
 
 pyautogui.alert('O código de automação de pesquisa no Edge vai começar....')
