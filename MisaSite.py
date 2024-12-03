@@ -42,12 +42,14 @@ class Automacao:
             logging.warning(f"Falha ao acessar {url}.")
         return False
 
-    async def executar_automacao(self):
+    async def executar_automacao(self, num_pesquisas=1):
         if await self.verificar_conectividade():
             if self.abrir_edge():
                 url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
-                sucesso = await self.acessar_pagina(url)
-                self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
+                for _ in range(num_pesquisas):
+                    sucesso = await self.acessar_pagina(url)
+                    self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
+                    await asyncio.sleep(5)  # Intervalo entre pesquisas
                 self.salvar_resultados()
                 logging.info("Automação concluída com sucesso.")
             else:
@@ -101,15 +103,10 @@ class InterfaceGrafica:
         style.configure('TEntry', font=('Helvetica', 12), padding=5)
 
         # Elementos da interface
-        ttk.Label(self.root, text="Número de Temas:", style='TLabel').pack(pady=10)
-        self.num_temas_entry = ttk.Entry(self.root, width=20)
-        self.num_temas_entry.pack(pady=5)
-        self.num_temas_entry.insert(0, "6")
-
-        ttk.Label(self.root, text="Número de Perguntas por Tema:", style='TLabel').pack(pady=10)
-        self.num_perguntas_entry = ttk.Entry(self.root, width=20)
-        self.num_perguntas_entry.pack(pady=5)
-        self.num_perguntas_entry.insert(0, "6")
+        ttk.Label(self.root, text="Número de Pesquisas:", style='TLabel').pack(pady=10)
+        self.num_pesquisas_entry = ttk.Entry(self.root, width=20)
+        self.num_pesquisas_entry.pack(pady=5)
+        self.num_pesquisas_entry.insert(0, "1")
 
         # Botão para iniciar a automação
         start_button = ttk.Button(self.root, text="Iniciar Automação", command=self.iniciar_automacao_handler)
@@ -120,10 +117,14 @@ class InterfaceGrafica:
         close_button.pack(pady=10)
 
     def iniciar_automacao_handler(self):
-        threading.Thread(target=self.run_automacao).start()
+        try:
+            num_pesquisas = int(self.num_pesquisas_entry.get())
+            threading.Thread(target=self.run_automacao, args=(num_pesquisas,)).start()
+        except ValueError:
+            messagebox.showerror("Erro", "Por favor, insira um número válido.")
 
-    def run_automacao(self):
-        asyncio.run(self.automacao.executar_automacao())
+    def run_automacao(self, num_pesquisas):
+        asyncio.run(self.automacao.executar_automacao(num_pesquisas))
 
     def run(self):
         self.root.mainloop()
