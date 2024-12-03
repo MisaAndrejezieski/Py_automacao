@@ -43,3 +43,6 @@
 2024-12-03 19:11:37,481 - WARNING - Conectividade com https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest falhou. Status code: 404
 2024-12-03 19:11:37,481 - ERROR - Falha na verificação de conectividade com a internet.
 2024-12-03 19:11:47,218 - INFO - Programa encerrado.
+2024-12-03 19:13:42,262 - DEBUG - Using proactor: IocpProactor
+2024-12-03 19:13:44,584 - INFO - Navegador Edge aberto com sucesso.
+2024-12-03 19:14:19,162 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
