@@ -37,7 +37,7 @@ class Automacao:
             for _ in range(num_pesquisas):
                 sucesso = await self.acessar_pagina(url)
                 self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
-                await asyncio.sleep(5)  # Intervalo entre pesquisas
+                await asyncio.sleep(2)  # Intervalo entre pesquisas reduzido para 2 segundos
                 self.limpar_cache_historico()
             self.salvar_resultados()
             logging.info("Automação concluída com sucesso.")
@@ -64,7 +64,7 @@ class Automacao:
             pyautogui.hotkey('ctrl', 't')
             pyautogui.write(url)
             pyautogui.press('enter')
-            time.sleep(10)
+            time.sleep(10)  # Tempo na página aumentado para 10 segundos
             pyautogui.hotkey('ctrl', 'w')
             logging.info(f"Página acessada: {url}")
             return True
