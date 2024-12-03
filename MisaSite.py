@@ -115,7 +115,7 @@ class InterfaceGrafica:
         ttk.Label(self.root, text="URL da Pesquisa:", style='TLabel').pack(pady=10)
         self.url_entry = ttk.Entry(self.root, width=50)
         self.url_entry.pack(pady=5)
-        self.url_entry.insert(0, "https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest")
+        self.url_entry.insert(0, "https://www.youtube.com/shorts/yRMN-ymQReE")
 
         ttk.Label(self.root, text="Número de Pesquisas:", style='TLabel').pack(pady=10)
         self.num_pesquisas_entry = ttk.Entry(self.root, width=20)
