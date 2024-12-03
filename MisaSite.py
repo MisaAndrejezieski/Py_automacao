@@ -38,8 +38,8 @@ class Automacao:
             if response.status_code == 200:
                 logging.info(f"Conectividade com {url} verificada.")
                 return True
-        except requests.ConnectionError:
-            logging.warning(f"Falha ao acessar {url}.")
+        except requests.ConnectionError as e:
+            logging.warning(f"Falha ao acessar {url}. Exceção: {e}")
         return False
 
     async def executar_automacao(self, num_pesquisas=1):
