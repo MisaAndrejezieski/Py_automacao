@@ -228,3 +228,207 @@
 2024-12-03 20:00:42,685 - INFO - Cache e histórico de navegação limpos.
 2024-12-03 20:00:42,685 - INFO - Automação concluída com sucesso.
 2024-12-03 20:00:45,823 - INFO - Programa encerrado.
+2024-12-03 20:01:40,498 - DEBUG - Using proactor: IocpProactor
+2024-12-03 20:01:42,825 - INFO - Navegador Chrome aberto com sucesso.
+2024-12-03 20:01:54,661 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:02:00,864 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:02:11,288 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:02:17,492 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:02:27,916 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:02:34,119 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:02:44,543 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:02:50,747 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:03:01,171 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:03:07,389 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:03:17,814 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:03:24,017 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:03:34,442 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:03:40,644 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:03:51,068 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:03:57,271 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:04:07,694 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:04:13,897 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:04:24,320 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:04:30,523 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:04:40,947 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:04:47,151 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:04:57,575 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:05:03,777 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:05:14,202 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:05:20,404 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:05:30,829 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:05:37,032 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:05:47,456 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:05:53,673 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:06:04,098 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:06:10,300 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:06:20,725 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:06:26,928 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:06:37,351 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:06:43,555 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:06:53,979 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:07:00,183 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:07:10,607 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:07:16,810 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:07:27,234 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:07:33,437 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:07:43,861 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:07:50,063 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:08:00,487 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:08:06,694 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:08:17,118 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:08:23,322 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:08:33,746 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:08:39,949 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:08:50,372 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:08:56,575 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:09:06,999 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:09:13,202 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:09:23,626 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:09:29,829 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:09:40,253 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:09:46,456 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:09:56,879 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:10:03,082 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:10:13,506 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:10:19,708 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:10:30,132 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:10:36,335 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:10:46,760 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:10:52,962 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:11:03,386 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:11:09,589 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:11:20,014 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:11:26,217 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:11:36,641 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:11:42,844 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:11:53,269 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:11:59,471 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:12:09,896 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:12:16,098 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:12:26,522 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:12:32,725 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:12:43,150 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:12:49,353 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:12:59,777 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:13:05,988 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:13:16,412 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:13:22,627 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:13:33,051 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:13:39,255 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:13:49,678 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:13:55,881 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:14:06,304 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:14:12,508 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:14:22,931 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:14:29,134 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:14:39,558 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:14:45,761 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:14:56,185 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:15:02,388 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:15:12,812 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:15:19,015 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:15:29,438 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:15:35,641 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:15:46,064 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:15:52,268 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:16:02,691 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:16:08,895 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:16:19,318 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:16:25,521 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:16:35,946 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:16:42,148 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:16:52,573 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:16:58,776 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:17:09,200 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:17:15,403 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:17:25,827 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:17:32,030 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:17:42,454 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:17:48,658 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:17:59,081 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:18:05,284 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:18:15,708 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:18:21,912 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:18:32,336 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:18:38,538 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:18:48,962 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:18:55,165 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:19:05,589 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:19:11,792 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:19:22,216 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:19:28,420 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:19:38,843 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:19:45,046 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:19:55,469 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:20:01,674 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:20:12,098 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:20:18,300 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:20:28,725 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:20:34,928 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:20:45,352 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:20:51,556 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:21:01,979 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:21:08,182 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:21:18,607 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:21:24,809 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:21:35,234 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:21:41,436 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:21:51,860 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:21:58,063 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:22:08,487 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:22:14,690 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:22:25,115 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:22:31,317 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:22:41,742 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:22:47,945 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:22:58,368 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:23:04,582 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:23:15,008 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:23:21,226 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:23:31,650 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:23:37,853 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:23:48,277 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:23:54,488 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:24:04,911 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:24:11,118 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:24:21,541 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:24:27,745 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:24:38,168 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:24:44,371 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:24:54,795 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:25:00,998 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:25:11,422 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:25:17,639 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:25:28,063 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:25:34,280 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:25:44,704 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:25:50,906 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:26:01,330 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:26:07,533 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:26:17,956 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:26:24,158 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:26:34,582 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:26:40,793 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:26:51,217 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:26:57,426 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:27:07,851 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:27:14,054 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:27:24,478 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:27:30,682 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:27:41,105 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:27:47,308 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:27:57,732 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:28:03,935 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:28:14,360 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:28:20,562 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:28:30,987 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:28:37,190 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:28:47,614 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:28:53,817 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:29:04,241 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:29:10,444 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:29:20,868 - INFO - Página acessada: https://www.youtube.com/shorts/yRMN-ymQReE
+2024-12-03 20:29:27,082 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 20:29:27,082 - INFO - Automação concluída com sucesso.
+2024-12-03 20:42:27,764 - INFO - Programa encerrado.
