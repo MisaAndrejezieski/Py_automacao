@@ -33,7 +33,7 @@ class Automacao:
     async def executar_automacao(self, num_pesquisas=1):
         if self.abrir_edge():
             url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
-            messagebox.showinfo("Automação Iniciada", "A pesquisa foi iniciada.")
+            self.mostrar_messagebox("Automação Iniciada", "A pesquisa foi iniciada.")
             for _ in range(num_pesquisas):
                 sucesso = await self.acessar_pagina(url)
                 self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
@@ -41,10 +41,10 @@ class Automacao:
                 self.limpar_cache_historico()
             self.salvar_resultados()
             logging.info("Automação concluída com sucesso.")
-            messagebox.showinfo("Automação Concluída", "A pesquisa foi concluída.")
+            self.mostrar_messagebox("Automação Concluída", "A pesquisa foi concluída.")
         else:
             logging.error("Falha ao abrir o navegador.")
-            messagebox.showerror("Erro", "Falha ao abrir o navegador.")
+            self.mostrar_messagebox("Erro", "Falha ao abrir o navegador.")
         self.fechar_programa()
 
     def abrir_edge(self):
@@ -85,6 +85,12 @@ class Automacao:
     def fechar_programa(self):
         logging.info("Programa encerrado.")
         os._exit(0)
+
+    def mostrar_messagebox(self, titulo, mensagem):
+        root = tk.Tk()
+        root.withdraw()
+        messagebox.showinfo(titulo, mensagem)
+        root.destroy()
 
 class InterfaceGrafica:
     def __init__(self, automacao):

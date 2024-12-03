@@ -151,3 +151,8 @@
 2024-12-03 19:34:44,652 - INFO - Cache e histórico de navegação limpos.
 2024-12-03 19:34:55,117 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
 2024-12-03 19:35:04,320 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:38:59,147 - DEBUG - Using proactor: IocpProactor
+2024-12-03 19:39:01,477 - INFO - Navegador Edge aberto com sucesso.
+2024-12-03 19:39:14,545 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:39:20,748 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:39:20,748 - INFO - Automação concluída com sucesso.
