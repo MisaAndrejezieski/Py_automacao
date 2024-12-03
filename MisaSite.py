@@ -30,9 +30,8 @@ class Automacao:
             for resultado in self.resultados:
                 writer.writerow([resultado['url'], resultado['status']])
 
-    async def executar_automacao(self, num_pesquisas=1):
+    async def executar_automacao(self, url, num_pesquisas=1):
         if self.abrir_edge():
-            url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
             self.mostrar_messagebox("Automação Iniciada", "A pesquisa foi iniciada.")
             for _ in range(num_pesquisas):
                 sucesso = await self.acessar_pagina(url)
@@ -113,6 +112,11 @@ class InterfaceGrafica:
         style.configure('TEntry', font=('Helvetica', 12), padding=5)
 
         # Elementos da interface
+        ttk.Label(self.root, text="URL da Pesquisa:", style='TLabel').pack(pady=10)
+        self.url_entry = ttk.Entry(self.root, width=50)
+        self.url_entry.pack(pady=5)
+        self.url_entry.insert(0, "https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest")
+
         ttk.Label(self.root, text="Número de Pesquisas:", style='TLabel').pack(pady=10)
         self.num_pesquisas_entry = ttk.Entry(self.root, width=20)
         self.num_pesquisas_entry.pack(pady=5)
@@ -128,13 +132,14 @@ class InterfaceGrafica:
 
     def iniciar_automacao_handler(self):
         try:
+            url = self.url_entry.get()
             num_pesquisas = int(self.num_pesquisas_entry.get())
-            threading.Thread(target=self.run_automacao, args=(num_pesquisas,)).start()
+            threading.Thread(target=self.run_automacao, args=(url, num_pesquisas)).start()
         except ValueError:
             messagebox.showerror("Erro", "Por favor, insira um número válido.")
 
-    def run_automacao(self, num_pesquisas):
-        asyncio.run(self.automacao.executar_automacao(num_pesquisas))
+    def run_automacao(self, url, num_pesquisas):
+        asyncio.run(self.automacao.executar_automacao(url, num_pesquisas))
 
     def run(self):
         self.root.mainloop()
