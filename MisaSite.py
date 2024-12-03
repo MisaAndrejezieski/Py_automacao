@@ -31,7 +31,7 @@ class Automacao:
                 writer.writerow([resultado['url'], resultado['status']])
 
     async def executar_automacao(self, url, num_pesquisas=1):
-        if self.abrir_edge():
+        if self.abrir_chrome():
             self.mostrar_messagebox("Automação Iniciada", "A pesquisa foi iniciada.")
             for _ in range(num_pesquisas):
                 sucesso = await self.acessar_pagina(url)
@@ -46,16 +46,16 @@ class Automacao:
             self.mostrar_messagebox("Erro", "Falha ao abrir o navegador.")
         self.fechar_programa()
 
-    def abrir_edge(self):
+    def abrir_chrome(self):
         try:
             pyautogui.press('win')
-            pyautogui.write('edge')
+            pyautogui.write('chrome')
             pyautogui.press('enter')
             time.sleep(2)
-            logging.info("Navegador Edge aberto com sucesso.")
+            logging.info("Navegador Chrome aberto com sucesso.")
             return True
         except Exception as e:
-            logging.error(f"Erro ao abrir o Edge: {e}")
+            logging.error(f"Erro ao abrir o Chrome: {e}")
             return False
 
     async def acessar_pagina(self, url):
