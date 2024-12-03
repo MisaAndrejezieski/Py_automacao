@@ -89,3 +89,51 @@
 2024-12-03 19:22:03,091 - INFO - Cache e histórico de navegação limpos.
 2024-12-03 19:22:03,091 - INFO - Automação concluída com sucesso.
 2024-12-03 19:23:52,119 - INFO - Programa encerrado.
+2024-12-03 19:24:30,827 - DEBUG - Using proactor: IocpProactor
+2024-12-03 19:24:33,147 - INFO - Navegador Edge aberto com sucesso.
+2024-12-03 19:24:49,360 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:24:58,563 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:25:09,012 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:25:18,215 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:25:28,666 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:25:37,869 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:25:48,318 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:25:57,521 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:26:07,971 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:26:17,174 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:26:27,624 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:26:36,827 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:26:47,291 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:26:56,494 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:27:06,944 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:27:16,147 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:27:26,595 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:27:35,798 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:27:46,248 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:27:55,451 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:28:05,901 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:28:15,104 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:28:25,553 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:28:34,756 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:28:45,205 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:28:54,408 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:29:04,857 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:29:14,060 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:29:24,509 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:29:33,712 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:29:44,161 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:29:53,364 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:30:03,814 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:30:13,017 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:30:23,465 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:30:32,668 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:30:43,117 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:30:52,335 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:31:02,784 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:31:11,988 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:31:22,437 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:31:31,639 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:31:42,088 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:31:51,292 - INFO - Cache e histórico de navegação limpos.
+2024-12-03 19:32:01,740 - INFO - Página acessada: https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest
+2024-12-03 19:32:10,944 - INFO - Cache e histórico de navegação limpos.
