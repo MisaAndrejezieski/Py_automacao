@@ -46,16 +46,20 @@ class Automacao:
         if await self.verificar_conectividade():
             if self.abrir_edge():
                 url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
+                messagebox.showinfo("Automação Iniciada", "A pesquisa foi iniciada.")
                 for _ in range(num_pesquisas):
                     sucesso = await self.acessar_pagina(url)
                     self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
                     await asyncio.sleep(5)  # Intervalo entre pesquisas
                 self.salvar_resultados()
                 logging.info("Automação concluída com sucesso.")
+                messagebox.showinfo("Automação Concluída", "A pesquisa foi concluída.")
             else:
                 logging.error("Falha ao abrir o navegador.")
+                messagebox.showerror("Erro", "Falha ao abrir o navegador.")
         else:
             logging.error("Falha na verificação de conectividade com a internet.")
+            messagebox.showerror("Erro", "Falha na verificação de conectividade com a internet.")
 
     def abrir_edge(self):
         try:
