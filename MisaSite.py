@@ -53,6 +53,7 @@ class Automacao:
                     sucesso = await self.acessar_pagina(url)
                     self.resultados.append({'url': url, 'status': 'Concluída' if sucesso else 'Falha'})
                     await asyncio.sleep(5)  # Intervalo entre pesquisas
+                    self.limpar_cache_historico()
                 self.salvar_resultados()
                 logging.info("Automação concluída com sucesso.")
                 messagebox.showinfo("Automação Concluída", "A pesquisa foi concluída.")
@@ -62,6 +63,7 @@ class Automacao:
         else:
             logging.error("Falha na verificação de conectividade com a internet.")
             messagebox.showerror("Erro", "Falha na verificação de conectividade com a internet.")
+        self.fechar_programa()
 
     def abrir_edge(self):
         try:
@@ -87,6 +89,20 @@ class Automacao:
         except Exception as e:
             logging.error(f"Falha ao acessar a página: {url}. Erro: {e}")
             return False
+
+    def limpar_cache_historico(self):
+        try:
+            pyautogui.hotkey('ctrl', 'shift', 'delete')
+            time.sleep(2)
+            pyautogui.press('enter')
+            time.sleep(2)
+            logging.info("Cache e histórico de navegação limpos.")
+        except Exception as e:
+            logging.error(f"Erro ao limpar cache e histórico: {e}")
+
+    def fechar_programa(self):
+        logging.info("Programa encerrado.")
+        os._exit(0)
 
 class InterfaceGrafica:
     def __init__(self, automacao):
