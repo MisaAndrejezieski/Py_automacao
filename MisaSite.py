@@ -1,14 +1,14 @@
 import time
 import pyautogui
 import logging
-import requests
 import tkinter as tk
-from tkinter import messagebox, PhotoImage
+from tkinter import messagebox
 from tkinter import ttk
 import threading
 import os
 import csv
 import asyncio
+import requests
 
 # Configuração de logging
 logging.basicConfig(
@@ -31,19 +31,6 @@ class Automacao:
             for resultado in self.resultados:
                 writer.writerow([resultado['url'], resultado['status']])
 
-    async def verificar_conectividade(self):
-        url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
-        try:
-            response = requests.get(url, timeout=10)
-            if response.status_code == 200:
-                logging.info(f"Conectividade com {url} verificada.")
-                return True
-            else:
-                logging.warning(f"Conectividade com {url} falhou. Status code: {response.status_code}")
-        except requests.ConnectionError as e:
-            logging.warning(f"Falha ao acessar {url}. Exceção: {e}")
-        return False
-
     async def executar_automacao(self, num_pesquisas=1):
         if await self.verificar_conectividade():
             if self.abrir_edge():
@@ -62,6 +49,19 @@ class Automacao:
         else:
             logging.error("Falha na verificação de conectividade com a internet.")
             messagebox.showerror("Erro", "Falha na verificação de conectividade com a internet.")
+
+    async def verificar_conectividade(self):
+        url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
+        try:
+            response = requests.get(url, timeout=10)
+            if response.status_code == 200:
+                logging.info(f"Conectividade com {url} verificada.")
+                return True
+            else:
+                logging.warning(f"Conectividade com {url} falhou. Status code: {response.status_code}")
+        except requests.RequestException as e:
+            logging.warning(f"Falha ao acessar {url}. Exceção: {e}")
+        return False
 
     def abrir_edge(self):
         try:
