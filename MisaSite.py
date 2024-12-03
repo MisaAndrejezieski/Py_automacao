@@ -34,10 +34,12 @@ class Automacao:
     async def verificar_conectividade(self):
         url = 'https://web.dio.me/articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest'
         try:
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, timeout=10)
             if response.status_code == 200:
                 logging.info(f"Conectividade com {url} verificada.")
                 return True
+            else:
+                logging.warning(f"Conectividade com {url} falhou. Status code: {response.status_code}")
         except requests.ConnectionError as e:
             logging.warning(f"Falha ao acessar {url}. Exceção: {e}")
         return False
