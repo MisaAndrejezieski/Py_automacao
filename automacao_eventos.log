@@ -10,3 +10,11 @@
 2024-12-03 18:53:51,994 - DEBUG - Starting new HTTPS connection (1): web.dio.me:443
 2024-12-03 18:53:52,057 - DEBUG - https://web.dio.me:443 "GET /articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest HTTP/11" 404 7297
 2024-12-03 18:53:52,057 - ERROR - Falha na verificação de conectividade com a internet.
+2024-12-03 18:57:56,306 - DEBUG - Using proactor: IocpProactor
+2024-12-03 18:57:56,322 - DEBUG - Starting new HTTPS connection (1): web.dio.me:443
+2024-12-03 18:57:56,400 - DEBUG - https://web.dio.me:443 "GET /articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest HTTP/11" 404 7297
+2024-12-03 18:57:56,400 - ERROR - Falha na verificação de conectividade com a internet.
+2024-12-03 18:58:02,914 - DEBUG - Using proactor: IocpProactor
+2024-12-03 18:58:02,914 - DEBUG - Starting new HTTPS connection (1): web.dio.me:443
+2024-12-03 18:58:02,964 - DEBUG - https://web.dio.me:443 "GET /articles/programa-em-python-para-automacao-de-pesquisas-no-edge?back=%2Fhome&page=1&order=oldest HTTP/11" 404 7297
+2024-12-03 18:58:02,980 - ERROR - Falha na verificação de conectividade com a internet.
